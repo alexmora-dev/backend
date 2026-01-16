@@ -11,10 +11,12 @@ app.use(express.json());
 //Importar rutas
 const authRoutes = require('./routes/auth');
 const clientesRoutes = require('./routes/clientes');
+const peliculasRoutes = require('./routes/peliculas');
 
 //Usar las rutas
 app.use('/api/auth', authRoutes);
 app.use('/api/clientes', clientesRoutes);
+app.use('/api/peliculas', peliculasRoutes);
 
 //Ruta de ejemplo
 app.get('/', (req, res) => {
