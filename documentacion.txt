@@ -1,0 +1,46 @@
+AUTENTICACION
+url: http://localhost:5000/api/auth/login
+
+Datos JSON:
+{
+    "nom_usuario": "valor",
+    "contrasena": "valor"
+}
+
+REQUIERE ENVIAR EL TOKEN EN HEADERS DE LAS PETICIONES
+Clave: Authorization
+Valor: Bearer token
+
+MÉTODO GET (MULTIPLES REGISTROS)
+url: http://localhost:5000/api/clientes?page=1&cadena=valor
+
+MÉTODO GET (REGISTRO ÚNICO)
+url: http://localhost:5000/api/clientes/ID
+
+MÉTODO POST
+url: http://localhost:5000/api/clientes
+Datos JSON:
+{
+    "cedula": "",
+    "nombres": "",
+    "apellidos": "",
+    "telefono": "",
+    "correo": "",
+    "direccion": "",
+    "fecha_nacimiento": ""
+}
+
+MÉTODO PUT
+url: http://localhost:5000/api/clientes/ID
+{
+    "cedula": "",
+    "nombres": "",
+    "apellidos": "",
+    "telefono": "",
+    "correo": "",
+    "direccion": "",
+    "fecha_nacimiento": ""
+}
+
+MÉTODO DELETE
+url: http://localhost:5000/api/clientes/ID
